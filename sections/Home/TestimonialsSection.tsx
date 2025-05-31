@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import SectionTitle from "@/components/SectionTitle"
-import { Star, ChevronLeft, ChevronRight } from "lucide-react"
+import { useState } from "react";
+import SectionTitle from "@/components/section-title";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -34,40 +34,65 @@ const TestimonialsSection = () => {
       rating: 4,
       text: "Serviço de qualidade na instalação elétrica da minha cozinha. Pontual, organizado e deixou tudo limpo após o trabalho.",
     },
-  ]
+  ];
 
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1))
-  }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1))
-  }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
     <section className="py-20 bg-blue-600 text-white">
       <div className="container mx-auto px-4">
-        <SectionTitle title="Testemunhos" subtitle="O que os nossos clientes dizem sobre nós" center light />
+        <SectionTitle
+          title="Testemunhos"
+          subtitle="O que os nossos clientes dizem sobre nós"
+          center
+          light
+        />
 
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
               <div className="flex mb-4">
                 {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                  <Star key={i} size={20} className="text-yellow-400 fill-yellow-400" />
+                  <Star
+                    key={i}
+                    size={20}
+                    className="text-yellow-400 fill-yellow-400"
+                  />
                 ))}
-                {[...Array(5 - testimonials[currentIndex].rating)].map((_, i) => (
-                  <Star key={i + testimonials[currentIndex].rating} size={20} className="text-yellow-400" />
-                ))}
+                {[...Array(5 - testimonials[currentIndex].rating)].map(
+                  (_, i) => (
+                    <Star
+                      key={i + testimonials[currentIndex].rating}
+                      size={20}
+                      className="text-yellow-400"
+                    />
+                  )
+                )}
               </div>
 
-              <p className="text-lg italic mb-6">"{testimonials[currentIndex].text}"</p>
+              <p className="text-lg italic mb-6">
+                "{testimonials[currentIndex].text}"
+              </p>
 
               <div>
-                <p className="font-bold text-xl">{testimonials[currentIndex].name}</p>
-                <p className="text-white/80">{testimonials[currentIndex].location}</p>
+                <p className="font-bold text-xl">
+                  {testimonials[currentIndex].name}
+                </p>
+                <p className="text-white/80">
+                  {testimonials[currentIndex].location}
+                </p>
               </div>
             </div>
 
@@ -104,7 +129,7 @@ const TestimonialsSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialsSection
+export default TestimonialsSection;

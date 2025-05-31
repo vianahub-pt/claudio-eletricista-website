@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Footer from "@/components/Footer";
-import SectionTitle from "@/components/SectionTitle";
+import Footer from "@/components/footer";
+import SectionTitle from "@/components/section-title";
 import { CheckCircle, Award, Users, Clock } from "lucide-react";
 
 export default function About() {

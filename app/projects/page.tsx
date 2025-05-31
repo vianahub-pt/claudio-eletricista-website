@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import Footer from "@/components/Footer"
-import SectionTitle from "@/components/SectionTitle"
-import { Calendar, MapPin, User } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import Footer from "@/components/footer";
+import SectionTitle from "@/components/section-title";
+import { Calendar, MapPin, User } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -82,14 +82,15 @@ export default function Projects() {
       category: "Eletricidade",
       location: "São João da Madeira",
       date: "2022",
-      description: "Instalação de tetos falsos com sistema elétrico integrado para iluminação moderna e funcional.",
+      description:
+        "Instalação de tetos falsos com sistema elétrico integrado para iluminação moderna e funcional.",
       image: "/images/trabalho-02.jpg",
       testimonial: {
         name: "Ana Rodrigues",
         text: "O resultado final superou as nossas expectativas. O teto ficou perfeito e a iluminação transformou completamente o ambiente.",
       },
     },
-  ]
+  ];
 
   return (
     <>
@@ -102,7 +103,8 @@ export default function Projects() {
                 Nossos <span className="text-blue-400">Projetos</span>
               </h1>
               <p className="text-xl">
-                Conheça alguns dos nossos trabalhos realizados com qualidade e profissionalismo em toda a região.
+                Conheça alguns dos nossos trabalhos realizados com qualidade e
+                profissionalismo em toda a região.
               </p>
             </div>
           </div>
@@ -111,7 +113,11 @@ export default function Projects() {
         {/* Projetos Grid */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <SectionTitle title="Trabalhos Realizados" subtitle="Projetos que demonstram nossa qualidade" center />
+            <SectionTitle
+              title="Trabalhos Realizados"
+              subtitle="Projetos que demonstram nossa qualidade"
+              center
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
@@ -151,9 +157,13 @@ export default function Projects() {
                       <div className="bg-gray-50 p-4 rounded-lg">
                         <div className="flex items-center mb-2">
                           <User size={16} className="mr-2 text-blue-600" />
-                          <span className="font-medium text-sm">{project.testimonial.name}</span>
+                          <span className="font-medium text-sm">
+                            {project.testimonial.name}
+                          </span>
                         </div>
-                        <p className="text-sm italic text-gray-600">"{project.testimonial.text}"</p>
+                        <p className="text-sm italic text-gray-600">
+                          "{project.testimonial.text}"
+                        </p>
                       </div>
                     )}
                   </div>
@@ -166,8 +176,12 @@ export default function Projects() {
         {/* CTA Section */}
         <section className="py-16 bg-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Gostou dos nossos trabalhos?</h2>
-            <p className="text-xl mb-8">Entre em contacto connosco para discutir o seu próximo projeto.</p>
+            <h2 className="text-3xl font-bold mb-4">
+              Gostou dos nossos trabalhos?
+            </h2>
+            <p className="text-xl mb-8">
+              Entre em contacto connosco para discutir o seu próximo projeto.
+            </p>
             <Link
               href="/contact"
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors"
@@ -180,5 +194,5 @@ export default function Projects() {
 
       <Footer />
     </>
-  )
+  );
 }

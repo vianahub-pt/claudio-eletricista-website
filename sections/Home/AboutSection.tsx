@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import SectionTitle from "@/components/SectionTitle"
-import { CheckCircle } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import SectionTitle from "@/components/section-title";
+import { CheckCircle } from "lucide-react";
 
 const AboutSection = () => {
   const features = [
@@ -13,13 +13,13 @@ const AboutSection = () => {
     "Garantia nos serviços prestados",
     "Orçamentos sem compromisso",
     "Disponibilidade para emergências",
-  ]
+  ];
 
   const handleLinkClick = () => {
     setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" })
-    }, 100)
-  }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+  };
 
   return (
     <section className="py-20 bg-white">
@@ -42,23 +42,33 @@ const AboutSection = () => {
           </div>
 
           <div>
-            <SectionTitle title="Sobre Nós" subtitle="Conheça a Claudio Eletricista e Picheleiro" />
+            <SectionTitle
+              title="Sobre Nós"
+              subtitle="Conheça a Claudio Eletricista e Picheleiro"
+            />
 
             <p className="mb-6">
-              Somos uma empresa especializada em serviços de eletricidade e canalização, atendendo clientes residenciais
-              e comerciais em Oliveira de Azeméis e região. Com mais de 15 anos de experiência no mercado, garantimos um
-              trabalho de qualidade, segurança e eficiência em cada projeto.
+              Somos uma empresa especializada em serviços de eletricidade e
+              canalização, atendendo clientes residenciais e comerciais em
+              Oliveira de Azeméis e região. Com mais de 15 anos de experiência
+              no mercado, garantimos um trabalho de qualidade, segurança e
+              eficiência em cada projeto.
             </p>
 
             <p className="mb-8">
-              Nossa equipa é formada por profissionais qualificados e comprometidos em oferecer as melhores soluções
-              para as necessidades dos nossos clientes, sempre com preços justos e transparentes.
+              Nossa equipa é formada por profissionais qualificados e
+              comprometidos em oferecer as melhores soluções para as
+              necessidades dos nossos clientes, sempre com preços justos e
+              transparentes.
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center">
-                  <CheckCircle size={20} className="text-blue-600 mr-2 flex-shrink-0" />
+                  <CheckCircle
+                    size={20}
+                    className="text-blue-600 mr-2 flex-shrink-0"
+                  />
                   <span>{feature}</span>
                 </li>
               ))}
@@ -75,7 +85,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
