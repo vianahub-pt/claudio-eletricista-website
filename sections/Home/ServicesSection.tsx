@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/components/sectiontitle";
 import { Zap, Droplet, Wrench, Home, Building, ShowerHead } from "lucide-react";
 
 const ServicesSection = () => {

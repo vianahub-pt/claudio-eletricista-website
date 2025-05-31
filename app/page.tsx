@@ -1,10 +1,10 @@
-import Footer from "@/components/Footer"
-import HeroSection from "@/sections/Home/HeroSection"
-import AboutSection from "@/sections/Home/AboutSection"
-import ServicesSection from "@/sections/Home/ServicesSection"
-import ProjectsSection from "@/sections/Home/ProjectsSection"
-import TestimonialsSection from "@/sections/Home/TestimonialsSection"
-import CtaSection from "@/sections/Home/CtaSection"
+import Footer from "@/components/footer";
+import HeroSection from "@/sections/Home/herosection";
+import AboutSection from "@/sections/Home/aboutsection";
+import ServicesSection from "@/sections/Home/servicessection";
+import ProjectsSection from "@/sections/Home/projectssection";
+import TestimonialsSection from "@/sections/Home/testimonialssection";
+import CtaSection from "@/sections/Home/ctasection";
 
 export default function Home() {
   return (
@@ -19,5 +19,5 @@ export default function Home() {
       </main>
       <Footer />
     </>
-  )
+  );
 }

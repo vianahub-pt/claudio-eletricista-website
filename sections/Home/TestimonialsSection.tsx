@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/components/sectiontitle";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const TestimonialsSection = () => {
