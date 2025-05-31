@@ -9,7 +9,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-const Footer = () => {
+const footer = () => {
   const currentYear = new Date().getFullYear();
   const phoneNumber = "351924243818"; // Sem o "+" para o WhatsApp
   const emailAddress = "claudioantunessil@gmail.com";
@@ -244,4 +244,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default footer;

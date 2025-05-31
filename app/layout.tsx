@@ -1,10 +1,10 @@
 import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import ScrollToTop from "@/components/scrollToTop";
-import SkipLinks from "@/components/skipLinks";
-import Header from "@/components/header";
-import Breadcrumb from "@/components/breadcrumb";
+import scrollToTop from "@/components/scrollToTop";
+import skipLinks from "@/components/skipLinks";
+import header from "@/components/header";
+import breadcrumb from "@/components/breadcrumb";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -61,10 +61,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
-        <ScrollToTop />
-        <SkipLinks />
-        <Header />
-        <Breadcrumb />
+        <scrollToTop />
+        <skipLinks />
+        <header />
+        <breadcrumb />
         <div id="main-content">{children}</div>
       </body>
     </html>

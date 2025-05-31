@@ -1,4 +1,4 @@
-import Footer from "@/components/footer";
+import footer from "@/components/footer";
 import HeroSection from "@/sections/Home/herosection";
 import AboutSection from "@/sections/Home/aboutsection";
 import ServicesSection from "@/sections/Home/servicessection";
@@ -17,7 +17,7 @@ export default function Home() {
         <TestimonialsSection />
         <CtaSection />
       </main>
-      <Footer />
+      <footer />
     </>
   );
 }
