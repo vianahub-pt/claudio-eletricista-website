@@ -1,13 +1,13 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import ScrollToTop from "@/components/ScrollToTop"
-import SkipLinks from "@/components/SkipLinks"
-import Header from "@/components/Header"
-import Breadcrumb from "@/components/Breadcrumb"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import ScrollToTop from "@/components/scrollToTop";
+import SkipLinks from "@/components/skipLinks";
+import Header from "@/components/header";
+import Breadcrumb from "@/components/breadcrumb";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -16,7 +16,14 @@ export const metadata: Metadata = {
   },
   description:
     "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região. Instalações elétricas, canalizações, reparações e muito mais.",
-  keywords: ["eletricista", "picheleiro", "canalização", "Oliveira de Azeméis", "instalações elétricas", "reparações"],
+  keywords: [
+    "eletricista",
+    "picheleiro",
+    "canalização",
+    "Oliveira de Azeméis",
+    "instalações elétricas",
+    "reparações",
+  ],
   authors: [{ name: "Claudio Eletricista e Picheleiro" }],
   creator: "Claudio Eletricista e Picheleiro",
   publisher: "Claudio Eletricista e Picheleiro",
@@ -29,21 +36,23 @@ export const metadata: Metadata = {
     locale: "pt_PT",
     url: "https://claudioeletricista.pt",
     title: "Claudio Eletricista e Picheleiro",
-    description: "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região.",
+    description:
+      "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região.",
     siteName: "Claudio Eletricista e Picheleiro",
   },
   twitter: {
     card: "summary_large_image",
     title: "Claudio Eletricista e Picheleiro",
-    description: "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região.",
+    description:
+      "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região.",
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="pt-PT">
@@ -59,5 +68,5 @@ export default function RootLayout({
         <div id="main-content">{children}</div>
       </body>
     </html>
-  )
+  );
 }
