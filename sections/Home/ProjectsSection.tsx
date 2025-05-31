@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import SectionTitle from "@/components/SectionTitle";
+import SectionTitle from "@/components/sectionTitle";
 
 const ProjectsSection = () => {
   const projects = [

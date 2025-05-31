@@ -2,7 +2,7 @@
 
 import type React from "react";
 import { useState } from "react";
-import SectionTitle from "@/components/SectionTitle";
+import SectionTitle from "@/components/sectionTitle";
 import {
   Mail,
   MapPin,

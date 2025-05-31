@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Footer from "@/components/footer";
-import SectionTitle from "@/components/SectionTitle";
+import SectionTitle from "@/components/sectionTitle";
 import {
   Zap,
   Droplet,

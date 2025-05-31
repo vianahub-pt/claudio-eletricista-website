@@ -3,7 +3,7 @@
 import type React from "react";
 import { useState } from "react";
 import Footer from "@/components/footer";
-import SectionTitle from "@/components/SectionTitle";
+import SectionTitle from "@/components/sectionTitle";
 import { Send, CheckCircle } from "lucide-react";
 
 export default function ContactClientPage() {
