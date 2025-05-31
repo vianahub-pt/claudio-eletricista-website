@@ -1,8 +1,8 @@
 import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import ScrollToTop from "@/components/ScrollToTop";
-import SkipLinks from "@/components/SkipLinks";
+import ScrollToTop from "@/components/scrollToTop";
+import SkipLinks from "@/components/skipLinks";
 import Header from "@/components/header";
 import Breadcrumb from "@/components/breadcrumb";
 import "./globals.css";
