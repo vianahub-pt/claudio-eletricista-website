@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import footer from "@/components/footer";
-import sectionTitle from "@/components/sectiontitle";
+import Footer from "@/components/footer";
+import SectionTitle from "@/components/SectionTitle";
 import {
   Zap,
   Droplet,
@@ -237,7 +237,7 @@ export default function Services() {
         </section>
       </main>
 
-      <footer />
+      <Footer />
     </>
   );
 }

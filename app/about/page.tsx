@@ -1,6 +1,6 @@
 import Image from "next/image";
-import footer from "@/components/footer";
-import SectionTitle from "@/components/sectiontitle";
+import Footer from "@/components/footer";
+import SectionTitle from "@/components/SectionTitle";
 import { CheckCircle, Award, Users, Clock } from "lucide-react";
 
 export default function About() {
@@ -237,7 +237,7 @@ export default function About() {
         </section>
       </main>
 
-      <footer />
+      <Footer />
     </>
   );
 }

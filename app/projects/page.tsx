@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import footer from "@/components/footer";
-import SectionTitle from "@/components/sectiontitle";
+import Footer from "@/components/footer";
+import SectionTitle from "@/components/SectionTitle";
 import { Calendar, MapPin, User } from "lucide-react";
 
 export default function Projects() {
@@ -192,7 +192,7 @@ export default function Projects() {
         </section>
       </main>
 
-      <footer />
+      <Footer />
     </>
   );
 }

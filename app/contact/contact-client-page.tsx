@@ -2,8 +2,8 @@
 
 import type React from "react";
 import { useState } from "react";
-import footer from "@/components/footer";
-import SectionTitle from "@/components/sectiontitle";
+import Footer from "@/components/footer";
+import SectionTitle from "@/components/SectionTitle";
 import { Send, CheckCircle } from "lucide-react";
 
 export default function ContactClientPage() {
@@ -167,7 +167,7 @@ Mensagem: ${formData.message}
         )}
         {submitStatus === "error" && <span>Erro ao enviar o formulário.</span>}
       </form>
-      <footer />
+      <Footer />
     </div>
   );
 }
