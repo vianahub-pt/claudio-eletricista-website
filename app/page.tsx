@@ -1,10 +1,10 @@
 import Footer from "@/components/footer";
-import HeroSection from "@/sections/Home/herosection";
-import AboutSection from "@/sections/Home/aboutsection";
-import ServicesSection from "@/sections/Home/servicessection";
-import ProjectsSection from "@/sections/Home/projectssection";
-import TestimonialsSection from "@/sections/Home/testimonialssection";
-import CtaSection from "@/sections/Home/ctasection";
+import HeroSection from "@/sections/Home/heroSection";
+import AboutSection from "@/sections/Home/aboutSection";
+import ServicesSection from "@/sections/Home/servicesSection";
+import ProjectsSection from "@/sections/Home/projectsSection";
+import TestimonialsSection from "@/sections/Home/testimonialsSection";
+import CtaSection from "@/sections/Home/ctaSection";
 
 export default function Home() {
   return (
