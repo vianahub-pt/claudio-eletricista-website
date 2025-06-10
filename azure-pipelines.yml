@@ -1,0 +1,78 @@
+trigger:
+  branches:
+    include:
+      - develop
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  NODE_VERSION: "20.x"
+  AZURE_WEBAPP_NAME: "claudio-eletricista-dev"
+
+steps:
+  - task: UseNode@1
+    inputs:
+      version: "$(NODE_VERSION)"
+    displayName: "🟢 Usar Node.js $(NODE_VERSION)"
+
+  - task: Cache@2
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: $(Pipeline.Workspace)/.npm
+    displayName: "📦 Cache de dependências npm"
+
+  - script: |
+      npm config set cache $(Pipeline.Workspace)/.npm --global
+    displayName: "🛠️ Configurar cache do npm"
+
+  - script: |
+      npm ci
+    displayName: "📥 Instalar dependências com npm ci"
+
+  - script: |
+      npm run build
+    displayName: "🔨 Build do projeto Next.js"
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: "."
+      Contents: |
+        .next/**
+        public/**
+        components/**
+        package.json
+        package-lock.json
+        next.config.js
+        pages/**
+        app/**
+        styles/**
+        tsconfig.json
+        postcss.config.js
+        tailwind.config.js
+      TargetFolder: "$(Build.ArtifactStagingDirectory)/app"
+    displayName: "📂 Copiar arquivos para publicação"
+
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: "$(Build.ArtifactStagingDirectory)/app"
+      includeRootFolder: false
+      archiveType: "zip"
+      archiveFile: "$(Build.ArtifactStagingDirectory)/app.zip"
+      replaceExistingArchive: true
+    displayName: "🗜️ Arquivar aplicação"
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: "$(Build.ArtifactStagingDirectory)/app.zip"
+      ArtifactName: "drop"
+    displayName: "🚀 Publicar artefato de build"
+
+  - task: AzureWebApp@1
+    inputs:
+      azureSubscription: "VianaHub (f4c7451f-95bd-4e98-9161-535d7dde38ef)"
+      appName: "$(AZURE_WEBAPP_NAME)"
+      package: "$(Build.ArtifactStagingDirectory)/app.zip"
+    displayName: "🌐 Deploy para Azure Web App"

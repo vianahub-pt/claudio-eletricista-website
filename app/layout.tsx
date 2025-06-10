@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Claudio Eletricista e Picheleiro",
   },
   description:
-    "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região. Instalações elétricas, canalizações, reparações e muito mais.",
+    "Serviços profissionais de eletricista, canalização e remodelação. Instalações elétricas, canalizações, reparações e muito mais.",
   keywords: [
     "eletricista",
     "picheleiro",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
     url: "https://claudioeletricista.pt",
     title: "Claudio Eletricista e Picheleiro",
     description:
-      "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região.",
+      "Serviços profissionais de eletricista, canalização e remodelação.",
     siteName: "Claudio Eletricista e Picheleiro",
   },
   twitter: {
     card: "summary_large_image",
     title: "Claudio Eletricista e Picheleiro",
     description:
-      "Serviços profissionais de eletricista e picheleiro em Oliveira de Azeméis e região.",
+      "Serviços profissionais de eletricista, canalização e remodelação.",
   },
   generator: "v0.dev",
 };

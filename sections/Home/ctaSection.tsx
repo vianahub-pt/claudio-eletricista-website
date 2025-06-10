@@ -1,12 +1,15 @@
-import Link from "next/link"
-import { Mail } from "lucide-react"
+import Link from "next/link";
+import { Mail } from "lucide-react";
 
 const CtaSection = () => {
-  const phoneNumber = "351924243818" // Sem o "+" para o WhatsApp
-  const emailAddress = "claudioantunessil@gmail.com"
+  const phoneNumber = "351924243818"; // Sem o "+" para o WhatsApp
+  const emailAddress = "claudioantunessil@gmail.com";
 
   return (
-    <section className="py-16 text-gray-800" style={{ backgroundColor: "#C8E8FF" }}>
+    <section
+      className="py-16 text-gray-800"
+      style={{ backgroundColor: "#C8E8FF" }}
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
@@ -15,7 +18,8 @@ const CtaSection = () => {
           </h2>
 
           <p className="text-xl mb-8 text-gray-700">
-            Entre em contacto connosco hoje mesmo para um orçamento gratuito e sem compromisso.
+            Entre em contacto connosco hoje mesmo para um orçamento gratuito e
+            sem compromisso.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
@@ -50,11 +54,13 @@ const CtaSection = () => {
             </Link>
           </div>
 
-          <p className="text-gray-600">Atendemos em Oliveira de Azeméis e região. Disponíveis para emergências 24/7.</p>
+          <p className="text-gray-600">
+            Atendemos em Oliveira de Azeméis e região.
+          </p>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CtaSection
+export default CtaSection;

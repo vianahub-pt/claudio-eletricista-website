@@ -71,15 +71,14 @@ export default function Services() {
       id: "repairs",
       title: "Reparações Gerais",
       description:
-        "Serviços de reparação e manutenção para problemas elétricos e de canalização.",
+        "Serviços de reparação e manutenção para problemas elétricos, canalização e remodelação.",
       icon: "Wrench",
       items: [
-        "Reparações elétricas de emergência",
-        "Reparações de canalização urgentes",
+        "Reparações elétricas",
+        "Reparações de canalização",
         "Substituição de componentes danificados",
         "Manutenção preventiva",
         "Resolução de problemas de pressão de água",
-        "Reparação de eletrodomésticos",
         "Instalação de equipamentos",
         "Consultoria técnica",
       ],
@@ -147,7 +146,7 @@ export default function Services() {
     <>
       <main>
         {/* Banner */}
-        <section className="bg-gray-800 text-white py-20">
+        <section className="hero-section text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -226,6 +225,7 @@ export default function Services() {
                     <Link
                       href="/contact"
                       className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors"
+                      aria-label="Solicitar Orçamento para serviços de eletricidade e canalização"
                     >
                       Solicitar Orçamento
                     </Link>

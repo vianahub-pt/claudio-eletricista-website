@@ -12,7 +12,6 @@ const AboutSection = () => {
     "Materiais de alta qualidade",
     "Garantia nos serviços prestados",
     "Orçamentos sem compromisso",
-    "Disponibilidade para emergências",
   ];
 
   const handleLinkClick = () => {
@@ -48,11 +47,11 @@ const AboutSection = () => {
             />
 
             <p className="mb-6">
-              Somos uma empresa especializada em serviços de eletricidade e
-              canalização, atendendo clientes residenciais e comerciais em
-              Oliveira de Azeméis e região. Com mais de 15 anos de experiência
-              no mercado, garantimos um trabalho de qualidade, segurança e
-              eficiência em cada projeto.
+              Somos uma empresa especializada em serviços de eletricidade,
+              canalização e remodelação, atendendo clientes residenciais e
+              comerciais. Com mais de 15 anos de experiência no mercado,
+              garantimos um trabalho de qualidade, segurança e eficiência em
+              cada projeto.
             </p>
 
             <p className="mb-8">

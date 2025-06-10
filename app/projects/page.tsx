@@ -96,7 +96,7 @@ export default function Projects() {
     <>
       <main>
         {/* Banner */}
-        <section className="bg-gray-800 text-white py-20">
+        <section className="hero-section text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -185,6 +185,7 @@ export default function Projects() {
             <Link
               href="/contact"
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors"
+              aria-label="Solicitar Orçamento para serviços de eletricidade e canalização"
             >
               Solicitar Orçamento
             </Link>

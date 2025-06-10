@@ -29,7 +29,7 @@ const ServicesSection = () => {
       icon: <Wrench size={40} className="text-blue-600" />,
       title: "Reparações Gerais",
       description:
-        "Serviços de reparação e manutenção para problemas elétricos e de canalização em residências e empresas.",
+        "Serviços de reparação e manutenção para problemas elétricos, canalização e remodelação em residências e empresas.",
       link: "/services#repairs",
     },
     {

@@ -2,7 +2,8 @@ export const services = [
   {
     id: "electrical",
     title: "Instalações Elétricas",
-    description: "Serviços completos de instalação e manutenção elétrica para residências e empresas.",
+    description:
+      "Serviços completos de instalação e manutenção elétrica para residências e empresas.",
     icon: "Zap",
     items: [
       "Instalação de quadros elétricos",
@@ -18,7 +19,8 @@ export const services = [
   {
     id: "plumbing",
     title: "Canalizações",
-    description: "Serviços profissionais de canalização para resolver qualquer problema hidráulico.",
+    description:
+      "Serviços profissionais de canalização para resolver qualquer problema hidráulico.",
     icon: "Droplet",
     items: [
       "Instalação de sistemas de canalização",
@@ -34,7 +36,8 @@ export const services = [
   {
     id: "bathroom",
     title: "Casas de Banho",
-    description: "Renovação completa ou parcial de casas de banho com qualidade e profissionalismo.",
+    description:
+      "Renovação completa ou parcial de casas de banho com qualidade e profissionalismo.",
     icon: "ShowerHead",
     items: [
       "Renovação completa de casas de banho",
@@ -50,15 +53,15 @@ export const services = [
   {
     id: "repairs",
     title: "Reparações Gerais",
-    description: "Serviços de reparação e manutenção para problemas elétricos e de canalização.",
+    description:
+      "Serviços de reparação e manutenção para problemas elétricos, canalização e remodelação.",
     icon: "Wrench",
     items: [
-      "Reparações elétricas de emergência",
-      "Reparações de canalização urgentes",
+      "Reparações elétricas",
+      "Reparações de canalização",
       "Substituição de componentes danificados",
       "Manutenção preventiva",
       "Resolução de problemas de pressão de água",
-      "Reparação de eletrodomésticos",
       "Instalação de equipamentos",
       "Consultoria técnica",
     ],
@@ -66,7 +69,8 @@ export const services = [
   {
     id: "residential",
     title: "Projetos Residenciais",
-    description: "Soluções completas para projetos elétricos e hidráulicos em residências.",
+    description:
+      "Soluções completas para projetos elétricos e hidráulicos em residências.",
     icon: "Home",
     items: [
       "Projetos elétricos para novas construções",
@@ -95,4 +99,4 @@ export const services = [
       "Certificação de instalações",
     ],
   },
-]
+];

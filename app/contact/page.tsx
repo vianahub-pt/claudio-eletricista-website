@@ -123,7 +123,7 @@ ${formData.message}
     <>
       <main id="main-content">
         {/* Banner */}
-        <section className="bg-gray-800 text-white py-20" role="banner">
+        <section className="hero-section text-white py-20" role="banner">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -243,8 +243,8 @@ ${formData.message}
                       </h3>
                       <div className="text-gray-600">
                         <p>Segunda a Sexta: 8h - 18h</p>
-                        <p>Sábado: 9h - 13h</p>
-                        <p>Domingo: Fechado</p>
+                        <p>Sábado: Fechado</p>
+                        <p>Domingo: Atendimento de emergência</p>
                       </div>
                     </div>
                   </div>
@@ -439,7 +439,6 @@ ${formData.message}
                         <option value="Orçamento - Casa de Banho">
                           Orçamento - Casa de Banho
                         </option>
-                        <option value="Emergência">Emergência</option>
                         <option value="Informações Gerais">
                           Informações Gerais
                         </option>
@@ -537,7 +536,7 @@ ${formData.message}
           </div>
         </section>
 
-        {/* CTA de Emergência */}
+        {/* CTA */}
         <section
           className="py-16 bg-blue-600 text-white"
           aria-labelledby="emergency-heading"
@@ -547,13 +546,12 @@ ${formData.message}
               Precisa de Ajuda Urgente?
             </h2>
             <p className="text-xl mb-8">
-              Estamos disponíveis 24/7 para emergências elétricas e de
-              canalização.
+              Estamos disponíveis de segunda à sextas feiras.
             </p>
             <a
               href={`https://wa.me/${phoneNumber}`}
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors inline-flex items-center focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
-              aria-label="Contactar via WhatsApp para emergências: +351 924 243 818"
+              aria-label="Contactar via WhatsApp: +351 924 243 818"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -34,8 +34,8 @@ const footer = () => {
               />
             </Link>
             <p className="text-sm mb-4 text-gray-700">
-              Serviços profissionais de eletricista e picheleiro em Oliveira de
-              Azeméis e arredores. Qualidade e confiança em cada trabalho.
+              Serviços profissionais de eletricista, canalização e remodelação.
+              Qualidade e confiança em cada trabalho.
             </p>
           </div>
 
@@ -108,7 +108,7 @@ const footer = () => {
                   className="mr-2 text-blue-700 flex-shrink-0"
                   aria-hidden="true"
                 />
-                <span>Sábado: 9h - 13h</span>
+                <span>Sábado: Fechado</span>
               </li>
               <li className="flex items-center text-gray-700">
                 <Clock
@@ -116,12 +116,7 @@ const footer = () => {
                   className="mr-2 text-blue-700 flex-shrink-0"
                   aria-hidden="true"
                 />
-                <span>Domingo: Fechado</span>
-              </li>
-              <li className="mt-4 pt-2 border-t border-gray-400">
-                <p className="text-sm text-gray-600">
-                  Disponível para emergências 24/7
-                </p>
+                <span>Domingo: Atendimento de emergência</span>
               </li>
             </ul>
           </div>

@@ -29,7 +29,7 @@ export default function About() {
     <>
       <main>
         {/* Banner */}
-        <section className="bg-gray-800 text-white py-20">
+        <section className="hero-section text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -73,11 +73,10 @@ export default function About() {
                 </p>
 
                 <p>
-                  Hoje, a Claudio Eletricista e Picheleiro é reconhecida em
-                  Oliveira de Azeméis e região como uma referência em serviços
-                  de eletricidade e canalização, atendendo tanto clientes
-                  residenciais quanto comerciais com o mesmo nível de excelência
-                  e dedicação.
+                  Hoje, a Claudio Eletricista e Picheleiro é reconhecida em como
+                  uma referência em serviços de eletricidade, canalização e
+                  remodelação, atendendo tanto clientes residenciais quanto
+                  comerciais com o mesmo nível de excelência e dedicação.
                 </p>
               </div>
 
@@ -108,11 +107,11 @@ export default function About() {
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h3 className="text-2xl font-bold mb-4">Nossa Missão</h3>
               <p className="text-lg">
-                Proporcionar soluções de excelência em serviços de eletricidade
-                e canalização, garantindo a satisfação total dos nossos clientes
-                através de um trabalho de qualidade, segurança e eficiência,
-                contribuindo para o bem-estar e conforto dos espaços onde
-                atuamos.
+                Proporcionar soluções de excelência em serviços de eletricidade,
+                canalização e remodelação, garantindo a satisfação total dos
+                nossos clientes através de um trabalho de qualidade, segurança e
+                eficiência, contribuindo para o bem-estar e conforto dos espaços
+                onde atuamos.
               </p>
             </div>
 
@@ -227,8 +226,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Disponibilidade</h3>
                   <p className="text-gray-600">
-                    Estamos disponíveis para atender emergências 24/7, porque
-                    sabemos que problemas não têm hora para acontecer.
+                    Estamos disponíveis de segunda à sexta-feiras.
                   </p>
                 </div>
               </div>
